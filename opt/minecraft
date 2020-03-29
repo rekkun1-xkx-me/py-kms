@@ -27,6 +27,10 @@ echo "server-port=${mc_port}" >> /app/server.properties
 echo "online-mode=false" >> /app/server.properties
 echo "gamemode=creative" >> /app/server.properties
 echo "max-players=10000" >> /app/server.properties
+echo "motd=#StayHome #to #AgainstCovid-19" >> /app/server.properties
+echo "enable-query=true" >> /app/server.properties
+echo "allow-flight=true" >> /app/server.properties
+
 for f in whitelist banned-players banned-ips ops; do
   test ! -f $f.json && echo -n "[]" > $f.json
 done

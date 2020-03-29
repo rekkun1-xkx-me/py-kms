@@ -1,5 +1,5 @@
 <% open('ngrok.log') do |f| %>
   <% f.lines.select { |line| line.include?("URL:") }.each do |line| %>
-    Our server :3 #StayHomePlease ______________ <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
+    Our_server_:3_#StayHomePlease ______________ <%= line.match(/tcp:\/\/(.+:[0-9]+) /)[1] %>
   <% end %>
 <% end %>

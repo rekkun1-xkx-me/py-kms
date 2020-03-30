@@ -32,6 +32,7 @@ echo "enable-query=true" >> /app/server.properties
 echo "allow-flight=true" >> /app/server.properties
 echo "op-permission-level=4" >> /app/server.properties
 echo "function-permission-level=4" >> /app/server.properties
+echo "level-seed=-8401963467085611877" >> /app/server.properties
 
 for f in whitelist banned-players banned-ips ops; do
   test ! -f $f.json && echo -n "[]" > $f.json

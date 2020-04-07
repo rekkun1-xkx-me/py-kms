@@ -3,9 +3,7 @@
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks)
 for running a Minecraft server in a [dyno](https://devcenter.heroku.com/articles/dynos).
 
-![Discord](https://img.shields.io/discord/658941546825252895?label=Join%20Discord%20server&style=for-the-badge)
-
-https://discord.gg/jZSVVsu
+![Discord](https://discord.gg/jZSVVsu)
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 

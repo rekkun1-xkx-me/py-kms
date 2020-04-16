@@ -45,10 +45,10 @@ case $limit in
   heap="4g"
   ;;
   32768) # PX Dyno
-  heap="4g"
+  heap="716mb"
   ;;
   *)     # 1X Dyno
-  heap="4g"
+  heap="512mb"
   ;;
 esac
 

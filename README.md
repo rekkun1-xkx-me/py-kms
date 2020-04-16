@@ -19,7 +19,7 @@ $ git commit -m "first commit"
 ```
 
 Then, install the [Heroku toolbelt](https://toolbelt.heroku.com/).
-Create a Heroku app, set your ngrok token, and push:
+Create a Heroku app and push:
 
 ```sh-session
 $ heroku create

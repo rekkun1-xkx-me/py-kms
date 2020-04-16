@@ -48,7 +48,7 @@ case $limit in
   heap="2g"
   ;;
   *)     # 1X Dyno
-  heap="1g"
+  heap="512mb"
   ;;
 esac
 

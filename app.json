@@ -14,6 +14,10 @@
     "NGROK_API_TOKEN": {
       "description": "Your personal ngrok API token",
       "required": true
+    },    
+    "DROPBOX_ACCESS_TOKEN": {
+      "description": "The dropbox access token for syncing",
+      "required": false
     },
     "AWS_BUCKET": {
       "description": "S3 Bucket to store your server state (you will lose your games when the server restarts if you don't do this)",

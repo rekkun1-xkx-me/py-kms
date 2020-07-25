@@ -45,7 +45,7 @@ Server available at: 0.tcp.ngrok.io:17003
 Copy the `0.tcp.ngrok.io:17003` part, and paste it into your local Minecraft app
 as the server name.
 
-## Syncing to S3
+## Syncing to S3 or DropBox
 
 The Heroku filesystem is [ephemeral](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem),
 which means files written to the file system will be destroyed when the server is restarted.
@@ -63,6 +63,12 @@ $ heroku config:set AWS_SECRET_KEY=xxx
 ```
 
 The buildpack will sync your world to the bucket every 60 seconds, but this is configurable by setting the `AWS_SYNC_INTERVAL` config var.
+
+If you want to use DropBox. Then configure the DropBox Token like this:
+
+```
+$ heroku config:set DROPBOX_ACCESS_TOKEN=xxx
+```
 
 ## Connecting to the server console
 

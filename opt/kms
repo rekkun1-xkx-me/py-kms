@@ -28,7 +28,7 @@ case $limit in
 esac
 
 echo "Starting: minecraft ${mc_port}"
-eval "screen -L -h 2048 -dmS python3 ./py-kms/pykms_Server.py "
+eval "screen -L -h 2048 -dmS python3 ./py-kms/pykms_Server.py 0.0.0.0 1688 -r 1440 "
 main_pid=$!
 
 # Flush the logfile every second, and ensure that the logfile exists

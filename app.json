@@ -1,43 +1,24 @@
 {
-  "name": "Minecraft",
-  "description": "Host your Minecraft Server on Heroku (without Xbox account) - Rek",
+  "name": "KMS",
+  "description": "Host your KMS Server on Heroku - Rek",
   "keywords": [
-    "games",
-    "minecraft"
+    "KMS",
+    "KMS-Server"
   ],
-  "repository": "https://github.com/jkutner/heroku-buildpack-minecraft",
+  "repository": "https://github.com/rekkun1-xkx-me/py-kms",
   "env": {
-    "MINECRAFT_EULA": {
-      "description": "Do you accept the Minecraft EULA?",
+    "EULA": {
+      "description": "Do you accept the EULA?",
       "value": "true"
     },
     "NGROK_API_TOKEN": {
       "description": "Your personal ngrok API token",
       "required": true
-    },    
-    "DROPBOX_ACCESS_TOKEN": {
-      "description": "The dropbox access token for syncing",
-      "required": false
-    },
-    "AWS_BUCKET": {
-      "description": "S3 Bucket to store your server state (you will lose your games when the server restarts if you don't do this)",
-      "required": false
-    },
-    "AWS_ACCESS_KEY": {
-      "description": "The AWS access key for the S3 Bucket",
-      "required": false
-    },
-    "AWS_SECRET_KEY": {
-      "description": "The AWS secret key for the S3 Bucket",
-      "required": false
     }
   },
   "buildpacks": [
     {
       "url": "heroku/python"
-    },
-    {
-      "url": "heroku/jvm"
     },
     {
       "url": "heroku-community/inline"
